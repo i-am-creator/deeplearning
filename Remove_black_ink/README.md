@@ -1,4 +1,4 @@
-In this project I used 'flower-102diffspecies-dataset' from kaggel. list there paths seclect 3000 images and move them to a dir.
+In this project I used 'flower-102diffspecies-dataset' from kaggel. list there paths seclect 3000 images and move them to a train dir and other 250 images to test dir.
 
 then build input pipeline and add one of the any masks from masks folder using this function.
 
