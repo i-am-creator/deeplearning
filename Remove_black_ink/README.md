@@ -1,6 +1,7 @@
-In this project I used 'flower-102diffspecies-dataset' from kaggel. list there paths seclect 3000 images and move them to a train dir and other 250 images to test dir.
+In this project, I have used a flower-102diffspecies-dataset from Kaggle in which I have randomly selected 3000 images and moved them into a training directory and 250 images from the rest were moved into the test directory.
 
-then build input pipeline and add one of the any masks from masks folder using this function.
+An input pipeline was build which is used to add one of the many masks into an image from the mask folder.
+
 
 ## Add back spots
 ```python
@@ -23,11 +24,14 @@ train_dataset = train_dataset.map(load_image_train,
                                   num_parallel_calls=tf.data.experimental.AUTOTUNE)
 train_dataset = train_dataset.shuffle(BUFFER_SIZE)
 train_dataset = train_dataset.batch(BATCH_SIZE)
+
+test_dataset = tf.data.Dataset.list_files(PATH+'test/*.jpg')
+test_dataset = test_dataset.map(load_image_test)
+test_dataset = test_dataset.batch(BATCH_SIZE)
 ```
 
-Then i train GAN network to genrate the missing information about the lost pixels 
+Then, I  had trained the GAN network to generate the missing information about the lost pixels and fed RGB images with mask(single channel) (information about the part which needs to be edited)
 
-I fed RGB images with black spots with mask(single channel) (information about the part which needs to be edited)
 
 ## Some output after training
 
