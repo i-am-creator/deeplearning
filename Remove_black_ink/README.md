@@ -1,6 +1,6 @@
-In this projhect I use flower-102diffspecies-dataset from kaggel. list there paths seclect 3000 images and move them to an dir.
+In this project I used 'flower-102diffspecies-dataset' from kaggel. list there paths seclect 3000 images and move them to a dir.
 
-then build input pipeline with and add one of the any masks from masks folder using this function.
+then build input pipeline and add one of the any masks from masks folder using this function.
 
 ## Add back spots
 ```python
@@ -25,9 +25,9 @@ train_dataset = train_dataset.shuffle(BUFFER_SIZE)
 train_dataset = train_dataset.batch(BATCH_SIZE)
 ```
 
-Then i train GAN network to genrate the missing information about lost pixel 
+Then i train GAN network to genrate the missing information about the lost pixels 
 
-I feed RGB images with black spots with mask (information about the part which needs to be edit)
+I fed RGB images with black spots with mask(single channel) (information about the part which needs to be edited)
 
 ## Some output after training
 
@@ -42,5 +42,5 @@ I feed RGB images with black spots with mask (information about the part which n
 ![alt text](https://github.com/i-am-creator/deeplearning/blob/master/Remove_black_ink/imzs/1%20(8).jpeg)
 
 
-from last example it seem like this model is not praform well with solid colours becouse it has vary few masks with solid black masks.
+from last example it seems like this model didn't praform well with solid colours becouse it has vary few masks with solid black spots.
 if we try with more solid masks then hopefull it will praform batter.
