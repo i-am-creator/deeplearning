@@ -29,7 +29,7 @@ Then i train GAN network to genrate the missing information about lost pixel
 
 I feed RGB images with black spots with mask (information about the part which needs to be edit)
 
-here are some outputs
+## Some output after training
 
 ![alt text](https://github.com/i-am-creator/deeplearning/blob/master/Remove_black_ink/imzs/1%20(1).jpeg)
 ![alt text](https://github.com/i-am-creator/deeplearning/blob/master/Remove_black_ink/imzs/1%20(2).jpeg)
