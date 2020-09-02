@@ -1,5 +1,7 @@
 In this project, I have used a flower-102diffspecies-dataset from Kaggle in which I have randomly selected 3000 images and moved them into a training directory and 250 images from the rest were moved into the test directory.
 
+and add some b/W images to be used as masks 
+
 An input pipeline was build which is used to add one of the many masks into an image from the mask folder.
 
 
@@ -48,3 +50,16 @@ Then, I  had trained the GAN network to generate the missing information about t
 
 from last example it seems like this model didn't praform well with solid colours becouse it has vary few masks with solid black spots.
 if we try with more solid masks then hopefull it will praform batter.
+
+to implement the model any other image you need to create a mask to tell the model which part of the image needs to be edited.
+this model is trained on only the images of flowers so maybe it cant perform well on other images. 
+
+## Acknowledgement
+- Thanks to the author `[Chen et al., CVPR18]` who published this great paper [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004)
+- [TensorFlow](https://www.tensorflow.org/) which provide many useful tutorials for learning TensorFlow 2.0:
+    - [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/alpha/tutorials/generative/dcgan)
+    - [Build a Image Input Pipeline](https://www.tensorflow.org/alpha/tutorials/load_data/images)
+    - [Get started with TensorBoard](https://www.tensorflow.org/tensorboard/r2/get_started)
+    - [Well documented implementation of The paper](https://www.tensorflow.org/tutorials/generative/pix2pix)
+- [Google Colaboratory](https://colab.research.google.com/) which allow us to train the models and [cartoonize images](#cartoonize-using-colab-notebook) using free GPUs
+- [Kaggel](https://www.kaggle.com/) to providing such an amazing [datasets](https://www.kaggle.com/demonplus/flower-dataset-102) for free 
