@@ -55,7 +55,7 @@ to implement the model any other image you need to create a mask to tell the mod
 this model is trained on only the images of flowers so maybe it cant perform well on other images. 
 
 ## Acknowledgement
-- Thanks to the author `[Chen et al., CVPR18]` who published this great paper [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004)
+- Thanks to the author `[Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, Alexei A. Efros]` who published this great paper [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004)
 - [TensorFlow](https://www.tensorflow.org/) which provide many useful tutorials for learning TensorFlow 2.0:
     - [Deep Convolutional Generative Adversarial Network](https://www.tensorflow.org/alpha/tutorials/generative/dcgan)
     - [Build a Image Input Pipeline](https://www.tensorflow.org/alpha/tutorials/load_data/images)
