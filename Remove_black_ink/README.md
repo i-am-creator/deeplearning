@@ -61,5 +61,5 @@ this model is trained on only the images of flowers so maybe it cant perform wel
     - [Build a Image Input Pipeline](https://www.tensorflow.org/alpha/tutorials/load_data/images)
     - [Get started with TensorBoard](https://www.tensorflow.org/tensorboard/r2/get_started)
     - [Well documented implementation of The paper](https://www.tensorflow.org/tutorials/generative/pix2pix)
-- [Google Colaboratory](https://colab.research.google.com/) which allow us to train the models and [cartoonize images](#cartoonize-using-colab-notebook) using free GPUs
+- [Google Colaboratory](https://colab.research.google.com/) which allow us to train the models using free GPUs
 - [Kaggel](https://www.kaggle.com/) to providing such an amazing [datasets](https://www.kaggle.com/demonplus/flower-dataset-102) for free 
